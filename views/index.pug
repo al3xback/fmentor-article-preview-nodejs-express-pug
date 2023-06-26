@@ -1,0 +1,42 @@
+extends layout/main.pug
+
+block content
+	article.card
+		.card__image
+			.card__image-inner
+				img(src='./images/drawers.jpg' alt='')
+		.card__content
+			h2.card__title
+				| Shift the overall look and feel by adding these
+				| wonderful touches to furniture in your home
+			p.card__desc
+				| Ever been in a room and felt like something was
+				| missing? Perhaps it felt slightly bare and
+				| uninviting. I&apos;ve got some simple tips to help you
+				| make any room feel complete.
+			.card__author
+				.card__author-img-box
+					img.card__author-img(width='40' height='40' src='./images/avatar.jpg' alt='Michelle Appleton')
+				.card__author-info
+					h3.card__author-name
+						| Michelle Appleton
+					p.card__author-post-date
+						| 28 Jun 2020
+			.card__share
+				input#share-toggle.card__share-checkbox(type='checkbox' name='toggle')
+				.card__share-box
+					.card__share-action
+						span.card__share-action-txt Share
+						ul.card__share-action-buttons
+							li
+								a(href='#' title='Share on facebook')
+									i.icon-facebook(aria-hidden='true')
+							li
+								a(href='#' title='Share on twitter')
+									i.icon-twitter(aria-hidden='true')
+							li
+								a(href='#' title='Share on pinterest')
+									i.icon-pinterest(aria-hidden='true')
+					label.btn.btn--icon.btn--share-toggle(for='share-toggle')
+						svg(xmlns='http://www.w3.org/2000/svg' width='15' height='13')
+							path(fill='currentColor' d='M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z')
