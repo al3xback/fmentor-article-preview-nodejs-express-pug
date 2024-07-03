@@ -2,6 +2,8 @@
 	"name": "fmentor-article-preview-nodejs-express-pug",
 	"private": true,
 	"version": "1.0.0",
+	"author": "alex <al3xback@gmail.com>",
+	"license": "ISC",
 	"scripts": {
 		"start": "nodemon app.js",
 		"start-server": "node app.js",
@@ -13,8 +15,6 @@
 		"lint": "run-s prettier",
 		"build": "run-s lint sass-prod postcss"
 	},
-	"author": "alex <al3xback@gmail.com>",
-	"license": "ISC",
 	"dependencies": {
 		"body-parser": "^1.20.2",
 		"express": "^4.18.2",
